@@ -1,0 +1,155 @@
+﻿body
+{
+	font:.9em/1em Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+	font:2em/1em Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+h2
+{
+	font:1.5em/1em Arial, Helvetica, sans-serif;
+}
+
+h3
+{
+	font:bold 1.2em/1em Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.WholePage
+{
+	float:left;
+	border:thick;
+	border-color:aqua;
+	border-style:solid;
+}
+
+.Header
+{
+	width:100%;
+	color:lime;
+	font-size:1em;
+	text-align:center;
+	border:thin;
+	border-color:green;
+	border-style:solid;
+}
+
+.LTBody
+{
+	width:100%;
+	border:thin;
+	border-color:silver;
+	border-style:solid;
+}
+
+.LeftPannel
+{
+	width:10%;
+	border:thin;
+	float:left;
+	border-color:blue;
+	border-style:solid;
+	padding:6px;
+}
+
+.CenterPannel
+{
+	position:relative;
+	width:75%;
+	border:thin;
+	margin-left:auto;
+	margin-right:auto;
+	border-color:blue;
+	border-style:solid;
+}
+
+.CenterTopImage
+{
+	width:100%;
+	border:thin;
+	z-index:1;
+	border-color:#F0F;
+	border-style:solid;
+}
+
+.CenterTopContent
+{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	width:100%;
+	border:thin;
+	z-index:2;
+	font-size:1em;
+	text-align:center;
+	border-color:aqua;
+	border-style:solid;
+	padding:6px;
+}
+
+.SearchBar
+{
+	width:30%;
+	border:thin;
+	margin-left:auto;
+	margin-right:auto;
+	border-color:blue;
+	border-style:solid;
+	padding:6px;
+}
+
+.GoButton
+{
+	width:20%;
+	border:thin;
+	margin-left:auto;
+	margin-right:auto;
+	border-color:blue;
+	border-style:solid;
+	padding:6px;
+}
+
+.CenterBottom
+{
+	width:100%;
+	border:thin;
+	font-size:2em;
+	text-align:center;
+	border-color:lime;
+	border-style:solid;
+	padding:6px;
+}
+
+.RightPannel
+{
+	width:10%;
+	border:thin;
+	float:right;
+	border-color:blue;
+	border-style:solid;
+	padding:6px;
+}
+
+.Footer
+{
+	width:100%;
+	border:thin;
+	clear:both;
+	border-color:blue;
+	border-style:solid;
+}
+
+#Button1
+{
+	background-image:url(SearchIcon1.png);
+}
+
+html,input,select,textarea
+{
+	font-size:100%;
+}

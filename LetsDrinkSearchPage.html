@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <link rel="stylesheet" href="LetsDrink.css" type="text/css" />
+        <title>Lets Drink</title>
+        <!--Include JQuery File-->
+        <script type="text/javascript" language="Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script language="JavaScript" type="text/javascript">
+            <!--Got following code from http://stackoverflow.com/questions/5358183/is-it-possible-to-dynamically-scale-text-size-based-on-browser-width -->
+            
+            $( document ).ready( function() {
+                     var $body = $('body'); //Cache this for performance
+            // window.alert("Setting Font Size");
+            
+                     var setBodyScale = function() {
+                         var scaleSource = $body.width(),
+                             scaleFactor = 0.1,                     
+                             maxScale = 600,
+                             minScale = 30; //Tweak these values to taste
+            
+                         var fontSize = scaleSource * scaleFactor; //Multiply the width of the body by the scaling factor:
+            
+                         if (fontSize > maxScale) fontSize = maxScale;
+                         if (fontSize < minScale) fontSize = minScale; //Enforce the minimum and maximums
+            
+                         $('body').css('font-size', fontSize + '%');
+                     }
+            
+                     $(window).resize(function(){
+                         setBodyScale();
+                     });
+            
+                     //Fire it when the page first loads:
+                     setBodyScale();
+                 });
+            
+            
+                 
+        </script>
+    </head>
+    <body>
+        <div class="WholePage">
+            <div class="Header">
+                <!--Nothing to see here !!   -->
+            </div>
+            <div class="LTBody">
+                <div class="LeftPannel" > 
+                    LeftPannel
+                    <br/>
+                    <br/>
+                </div>
+                <div class="RightPannel" > 
+                    RightPannel
+                </div>
+                <div class="CenterPannel">
+                    <!-- <div class="StretchyWrapper"> -->
+                    <div class="CenterTopImage">
+                        <img alt="Lets Drink !!!" src="LetsDrinkImage1_w1000.jpg" width="100%"  />
+                    </div>
+                    <div class="CenterTopContent">
+                        <br></br>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <div class="SearchBar">
+                            <form method="post">
+                                <input name="Enter Search" type="text" />
+                            </form>
+                        </div>
+                        <div class="GoButton"> 
+                            <BUTTON TYPE="submit">
+                            <IMG SRC="SearchIcon1.png" width="20%"  />
+                            Search
+                            </BUTTON>
+                        </div>
+                    </div>
+                    <!-- -End of CenterTopContent   -->
+                    <!-- </div>         <!-- -End of StretchyWrapper   -->
+                    <div class="CenterBottom"> 
+                        <input name="Checkbox1" type="checkbox" /> Beer
+                        <input name="Checkbox2" type="checkbox" /> Wine
+                        <input name="Checkbox3" type="checkbox" /> Spirits
+                    </div>
+                </div>
+                <!-- -End of CenterPannel   -->
+            </div>
+            <!-- -End of  LTBody  -->
+            <div class="Footer"> 
+            </div>
+        </div>
+    </body>
+</html>
