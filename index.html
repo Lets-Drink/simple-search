@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- Scripts to be loaded -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/spellchecktest.js" type="text/javascript"></script>
     <script src="js/simpleSearch.js" type="text/javascript"></script>
     <!-- Google Analytics Section -->
     <!-- After signing up for a google analytics account, you should add your website, and paste the script needed for tracking here -->
@@ -30,9 +31,10 @@
     <div class="container">
       <h1>Let's Drink</h1>
       <div id="searchbox">
-	<!-- The input box where users will enter their query -->
-	<input id="query" type="text" placeholder="Search here..." required></input>
-	<button id="search">Search</button>
+      	<!-- The input box where users will enter their query -->
+      	<input id="query" type="text" placeholder="Search here..." required></input>
+      	<button id="search">Search</button>
+        <div class="suggestions"></div>
       </div>
       <!-- Container where results will be filled in -->
       <div id="results"></div>
@@ -46,6 +48,7 @@
         <div class="url"></div>
         <div class="content"></div> 
       </div>
+      <div class="template suggestion-template suggestion"></div>
     </div> <!-- container -->
   </body>
 </html>

@@ -12,6 +12,11 @@ $(function(){
     $( "input#query" ).keypress(function( event ) {
         if ( event.which == 13 ) simpleSearch();
     });
+
+    // Performs a search on the key up of the search box
+    $("#query").keyup(function() {
+        simpleSearch();
+    });
 })
 
 // Input: query string, results container, result HTML template
@@ -32,9 +37,41 @@ function search(query, $container, $template){
         },
         jsonp: 'json.wrf',
         success: function (data) {
+            // console.log(data.spellcheck.suggestions);
+            // querySuggestion(data.spellcheck.suggestions);
+            querySuggestion();
             renderResults(data.response.docs, $container, $template);
         }
     });
+}
+
+function querySuggestion(suggestions) {
+    console.log("q");
+    suggestions = spellchecktest.spellcheck.suggestions;
+    
+    var container = $(".suggestions");
+    var template = $(".suggestion-template");
+    var templateClone;
+
+    container.empty();
+
+    for(var i = 0; i < 5; i++) {
+        templateClone = template.clone();
+
+        var index = Math.floor(Math.random() * (suggestions.length - 0 + 1) + 0);
+
+        templateClone.html(suggestions[index]);
+        templateClone.removeClass("suggestion-template");
+
+        templateClone.click(function() {
+            $( "input#query" ).val($(this).html());
+            search( $( "input#query" ).val(), $( "#results" ), $( ".template.result" ) );
+        });
+
+        container.append(templateClone);
+    }
+
+
 }
 
 // Input: JSON array of results, results container, result HTML template

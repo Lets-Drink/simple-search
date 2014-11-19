@@ -80,3 +80,12 @@ input#query {
 em {
     font-weight: 700;
 }
+
+.suggestion {
+    cursor: pointer;
+    border-bottom: 1px solid #EEE;
+}
+
+.suggestion:hover {
+    background-color: #EEE;
+}
