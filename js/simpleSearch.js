@@ -77,9 +77,7 @@ function renderQuerySuggestion(suggestions) {
     for(var i = 1; i < suggestions.length; i++) {
         templateClone = template.clone();
 
-        var index = Math.floor(Math.random() * (suggestions.length - 0 + 1) + 0);
-
-        templateClone.html(", " + suggestions[index]);
+        templateClone.html(", " + suggestions[i]);
         templateClone.removeClass("spellcheck-template");
 
         templateClone.click(function() {
