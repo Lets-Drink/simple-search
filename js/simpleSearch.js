@@ -34,19 +34,21 @@ function search(query, $container, $template){
             'wt': 'json',
             'indent': 'false',
             'defType': 'edismax',
+            'spellcheck': 'true',
+            'spellcheck.build': 'true',
+            'spellcheck.reload': 'true'
         },
         jsonp: 'json.wrf',
         success: function (data) {
-            // console.log(data.spellcheck.suggestions);
-            // querySuggestion(data.spellcheck.suggestions);
-            querySuggestion();
+            // renderQuerySuggestion(data.spellcheck.suggestions);
+            renderQuerySuggestion();
+            
             renderResults(data.response.docs, $container, $template);
         }
     });
 }
 
-function querySuggestion(suggestions) {
-    console.log("q");
+function renderQuerySuggestion(suggestions) {
     suggestions = spellchecktest.spellcheck.suggestions;
     
     var container = $(".suggestions");
