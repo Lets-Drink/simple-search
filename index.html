@@ -34,10 +34,15 @@
       	<!-- The input box where users will enter their query -->
       	<input id="query" type="text" placeholder="Search here..." required></input>
       	<button id="search">Search</button>
-        <div class="suggestions"></div>
+        <div class="spellchecking">
+          Did you mean: 
+          <span class="spellcheck-container"></span>
+        </div>
       </div>
+
       <!-- Container where results will be filled in -->
       <div id="results"></div>
+
       <!-- Template for results.  Each result is then later inserted into the results container after we get results from a query -->
       <div class="template result">
         <div class="title">
@@ -48,7 +53,8 @@
         <div class="url"></div>
         <div class="content"></div> 
       </div>
-      <div class="template suggestion-template suggestion"></div>
+      
+      <span class="template spellcheck-template spellcheck"></span>
     </div> <!-- container -->
   </body>
 </html>

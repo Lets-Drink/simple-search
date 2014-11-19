@@ -17,6 +17,8 @@ $(function(){
     $("#query").keyup(function() {
         simpleSearch();
     });
+
+    $(".spellchecking").hide();
 })
 
 // Input: query string, results container, result HTML template
@@ -35,38 +37,55 @@ function search(query, $container, $template){
             'indent': 'false',
             'defType': 'edismax',
             'spellcheck': 'true',
-            'spellcheck.build': 'true',
-            'spellcheck.reload': 'true'
+            'spellcheck.q': query
         },
         jsonp: 'json.wrf',
         success: function (data) {
-            // renderQuerySuggestion(data.spellcheck.suggestions);
-            renderQuerySuggestion();
-            
+
+            // Spellchecking
+            $(".spellchecking").hide();
+            var sp = data.spellcheck.suggestions;
+            if(sp.length != 0) {
+                renderQuerySuggestion(sp[1].suggestion);   
+                $(".spellchecking").fadeIn(1000);
+            }
+
+            // Search Results
             renderResults(data.response.docs, $container, $template);
         }
     });
 }
 
 function renderQuerySuggestion(suggestions) {
-    suggestions = spellchecktest.spellcheck.suggestions;
-    
-    var container = $(".suggestions");
-    var template = $(".suggestion-template");
-    var templateClone;
+    var container = $(".spellcheck-container");
+    var template = $(".spellcheck-template");
+    var templateClone = template.clone();
 
     container.empty();
 
-    for(var i = 0; i < 5; i++) {
+    templateClone.html(suggestions[0]);
+    templateClone.removeClass("spellcheck-template");
+
+    templateClone.click(function() {
+        $( "input#query" ).val($(this).html());
+        search( $( "input#query" ).val(), $( "#results" ), $( ".template.result" ) );
+    });
+
+    container.append(templateClone);
+
+
+    for(var i = 1; i < suggestions.length; i++) {
         templateClone = template.clone();
 
         var index = Math.floor(Math.random() * (suggestions.length - 0 + 1) + 0);
 
-        templateClone.html(suggestions[index]);
-        templateClone.removeClass("suggestion-template");
+        templateClone.html(", " + suggestions[index]);
+        templateClone.removeClass("spellcheck-template");
 
         templateClone.click(function() {
-            $( "input#query" ).val($(this).html());
+            var input = $(this).html();
+            input = input.split(" ");
+            $( "input#query" ).val(input[1]);
             search( $( "input#query" ).val(), $( "#results" ), $( ".template.result" ) );
         });
 
