@@ -38,7 +38,11 @@ function search(query, $container, $template){
             'indent': 'false',
             'defType': 'edismax',
             'spellcheck': 'true',
-            'spellcheck.q': query
+            'spellcheck.q': query,
+            "hl.simple.pre":"<em>",
+            "hl.simple.post":"</em>",
+            "hl.fl":"content",
+            "hl":"true"
         },
         jsonp: 'json.wrf',
         success: function (data) {
@@ -51,7 +55,7 @@ function search(query, $container, $template){
                 }
 
                 // Search Results
-                renderResults(data.response.docs, $container, $template);
+                renderResults(data.response.docs, data.highlighting, $container, $template);
         }
     });
 }
@@ -98,7 +102,7 @@ function renderQuerySuggestion(suggestions) {
 // Effect: Replaces results container with new results, and renders
 // the appropriate HTML
 // Output: void
-function renderResults(docs, $container, $template){
+function renderResults(docs, highlight, $container, $template){
     $container.empty(); // If there are any previous results, remove them
     var result;
     $.each(docs, function(index, doc){
@@ -108,7 +112,8 @@ function renderResults(docs, $container, $template){
             .find( "h3" )
             .append( doc.title );
         result.find( ".url" ).append( doc.url );
-        result.find( ".content" ).append( maxWords(doc.content, 100) );
+        // result.find( ".content" ).append( maxWords(doc.content, 20) );
+        result.find( ".content").append(highlight[doc.url].content[0]);
         result.removeClass( "template" );
         result.fadeIn(500);
         $container.append(result);
