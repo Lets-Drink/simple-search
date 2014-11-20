@@ -1,0 +1,101 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url(reset.css);
+
+body {
+    background-color: #DDD;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2;
+    color: #333;
+}
+
+h1 {
+    font-size: 350%;
+    font-weight: 300;
+    text-align: center;
+    color: #777;
+    margin-bottom: 40px;
+    padding-top: 50px;
+}
+
+h3 {
+    font-size: 135%;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+a {
+    color: #303E5E;
+}
+
+.url {
+    color: #152343;
+    font-size: 110%;
+}
+
+.content {
+    margin-top: 10px;
+    margin-right: 30%;
+}
+
+#results {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.result {
+    margin-bottom: 20px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100%;
+    width: 70%;
+    background-color: #FCFCFC;
+}
+
+button#search {
+    width: 83px;
+    height: 36px;
+    overflow: hidden;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+#searchbox {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input#query {
+    font-size: 150%;
+    width: 65%;
+}
+
+em {
+    font-weight: 700;
+}
+
+/*.suggestion {
+    cursor: pointer;
+    border-bottom: 1px solid #EEE;
+}
+
+.suggestion:hover {
+    background-color: #EEE;
+}*/
+
+.spellchecking {
+    margin-top: 20px;
+}
+
+.spellcheck {
+    text-align: center;
+    font-style: italic;
+    cursor: pointer;
+}
