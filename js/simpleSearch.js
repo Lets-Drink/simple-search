@@ -113,7 +113,7 @@ function renderResults(docs, highlight, $container, $template){
             .append( doc.title );
         result.find( ".url" ).append( doc.url );
         // result.find( ".content" ).append( maxWords(doc.content, 20) );
-        result.find( ".content").append(highlight[doc.url].content[0]);
+        result.find( ".content").append(highlight[doc.url].content[0] + "...");
         result.removeClass( "template" );
         result.fadeIn(500);
         $container.append(result);
