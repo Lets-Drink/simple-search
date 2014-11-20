@@ -19,6 +19,7 @@ $(function(){
     });
 
     $(".spellchecking").hide();
+    $(".template").hide();
 })
 
 // Input: query string, results container, result HTML template
@@ -41,17 +42,16 @@ function search(query, $container, $template){
         },
         jsonp: 'json.wrf',
         success: function (data) {
+                // Spellchecking
+                var sp = data.spellcheck.suggestions;
+                $(".spellchecking").hide();
+                if(sp.length != 0) {
+                    renderQuerySuggestion(sp[1].suggestion);   
+                    $(".spellchecking").fadeIn(500);
+                }
 
-            // Spellchecking
-            $(".spellchecking").hide();
-            var sp = data.spellcheck.suggestions;
-            if(sp.length != 0) {
-                renderQuerySuggestion(sp[1].suggestion);   
-                $(".spellchecking").fadeIn(500);
-            }
-
-            // Search Results
-            renderResults(data.response.docs, $container, $template);
+                // Search Results
+                renderResults(data.response.docs, $container, $template);
         }
     });
 }
@@ -71,6 +71,7 @@ function renderQuerySuggestion(suggestions) {
         search( $( "input#query" ).val(), $( "#results" ), $( ".template.result" ) );
     });
 
+    templateClone.show();
     container.append(templateClone);
 
 
@@ -109,6 +110,7 @@ function renderResults(docs, $container, $template){
         result.find( ".url" ).append( doc.url );
         result.find( ".content" ).append( maxWords(doc.content, 100) );
         result.removeClass( "template" );
+        result.fadeIn(500);
         $container.append(result);
     });
 }
