@@ -1,5 +1,5 @@
-﻿@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
-@import url('../../../../Clancy/Joshua/My%20Documents/school/juniors/infoSearching/GitHubVersion/reset.css');
+﻿
+@import url('css/reset.css');
 
 /*Define font styles */
 body
@@ -99,7 +99,7 @@ h3
 	padding:6px; /* allows space inside border. */
 }
 
-.searchbox
+.searchboxclass
 {
 	width:90%;
 	border:thin;
@@ -108,6 +108,7 @@ h3
 	border-color:white;
 	border-style:solid;
 	padding:6px;
+	background:transparent;
 }
 #query
 {
@@ -115,7 +116,9 @@ h3
 }
 .OurButtons
 {
-	width:5em;border-width:.2em;
+	width:5em;
+	border-width:.2em;
+	font-size:1em
 }
 /*.suggestion {
     cursor: pointer;
@@ -154,9 +157,11 @@ h3
 
 .Footer /* div for future use */
 {
-	width:100%;
+	width:80%;
 	border:thin;
 	clear:both;
+	margin-left:auto;
+	margin-right:auto;
 	border-color:white;
 	border-style:solid;
 }
