@@ -1,0 +1,144 @@
+﻿@inherits UmbracoTemplatePage
+
+
+     
+	
+	    
+	
+<script>
+	 function smybrowsersize()
+     {
+		 
+		 simgwidth=0;
+		 simgheight=0;
+		 
+		 if($("#SMSliderImg1").width()>simgwidth){simgwidth=$("#SMSliderImg1").width()};
+		 if($("#SMSliderImg1").height()>simgheight){simgheight=$("#SMSliderImg1").height()};
+			 
+		 if($("#SMSliderImg2").width()>simgwidth){simgwidth=$("#SMSliderImg2").width()};
+		 if($("#SMSliderImg2").height()>simgheight){simgheight=$("#SMSliderImg2").height()};
+			 
+		 if($("#SMSliderImg3").width()>simgwidth){simgwidth=$("#SMSliderImg3").width()};
+		 if($("#SMSliderImg3").height()>simgheight){simgheight=$("#SMSliderImg3").height()};
+				 
+			 
+		 if($("#SMSliderImg4").width()>simgwidth){simgwidth=$("#SMSliderImg4").width()};
+		 if($("#SMSliderImg4").height()>simgheight){simgheight=$("#SMSliderImg4").height()};
+				 
+			 
+		 if($("#SMSliderImg5").width()>simgwidth){simgwidth=$("#SMSliderImg5").width()};
+		 if($("#SMSliderImg5").height()>simgheight){simgheight=$("#SMSliderImg5").height()};
+				 
+				 
+		 
+     document.getElementById("sbrowsersizespan").innerHTML = window.innerWidth + " X " + window.innerHeight + "  -  " +  simgwidth + " X " + simgheight   ;
+		 
+     };
+     $(document).ready(function(){
+     $(window).resize(function(){
+     smybrowsersize();
+     });
+     });
+
+	 window.onload = smybrowsersize();
+
+     </script>
+
+	
+	
+	
+<div class="slideshow" align="center">
+	
+<!--	    <span id = sbrowsersizespan   align="center"  style="visibility: visible">Hello       
+      	<button type="button" onclick="smybrowsersize()">Try it</button>     
+      	</span>  
+-->
+
+
+<!--  XXXXXXXXXXXXXXXXXXXX -->
+<!-- This is the CONTENT HOLDER for the Index Page Slider Animation -->
+<!-- 36612_AAA - Index Page - Slider Animation -->
+
+
+<div class="slides cycle-slideshow" data-cycle-pause-on-hover="true" data-cycle-timeout="8000" data-cycle-pager="#slide-pager" data-cycle-slides="&gt; div" data-cycle-log="false">
+<div class="slide">
+	<a href="/sm-menu-0-1-about-us/"><img class="slide-image" id="SMSliderImg1" alt="" src="/Images/SM_Slider_3_SketchMotion_Home.jpg" /></a>
+<div class="caption">
+<div class="inner">
+<h2>SketchMotion</h2>
+<p>SketchMotion can help you achieve greater influence over  your key audiences. Our primary focus is to do this 
+	by producing quality Sketch Videos (also known as Scribe Videos or Whiteboard Videos) optimized for specified target audiences.  We also provide Video 
+	Editing, and Umbraco based Web Site development services....
+</p>
+<p><a href="/sm-menu-0-1-about-us/">&gt;&gt; MORE</a></p> 
+</div>
+</div>
+</div>
+<div class="slide">
+<a href="/sm-menu-0-1-about-us/"><img class="slide-image" id="SMSliderImg2" alt="" src="/Images/SM_Slider_2_HiTech.jpg" /></a>
+<div class="caption">
+<div class="inner">
+<h2>HI TECH</h2>
+<p>Hi Tech is renowned for complex value propositions, jargon & TLA&#39;s (Three Letter Acronyms). SketchMotion can help you cut through the clutter & deliver a simple and focused message that people can enjoy. Simple scenarios & storytelling help to simplify the message & make it stick.
+</p>
+<!-- <p><a href="/XXXXXXX/">&gt;&gt; MORE</a></p> -->
+</div>
+</div>
+</div>
+<div class="slide">
+<a href="/sm-home1/"><img class="slide-image" id="SMSliderImg3" alt="" src="/Images/SM_Slider_4_Consumer.jpg" /></a>
+<div class="caption">
+<div class="inner">
+<h2>CONSUMER</h2>
+<p>The consumer audience is very diverse in terms of education, interests & backgrounds. SketchMotion can 
+	deliver your message so that it will have an impact across the full breadth of the targeted consumer audience. Animated sketches, 
+	relevant scenarios & storytelling maximize impact across this diverse audience.
+</p>
+<!-- <p><a href="/XXXXXXX/">&gt;&gt; MORE</a></p>  -->
+</div>
+</div>
+</div>
+<div class="slide">
+<a href="/sm-home1/"><img class="slide-image" id="SMSliderImg4" alt="" src="/Images/SM_Slider_5_Medical.jpg" /></a>
+<div class="caption">
+<div class="inner">
+<h2>MEDICAL</h2>
+<p>Preventative medicine, medical procedures, medical insurance & medical equipment sales, all face the 
+	challenge of simplifying essential communications so that they my be heard and understood. SketchMotion can help illustrate the procedures and benefits 
+	of preventative care & insurance, help to explain medical procedures in layman’s terms and help communicate the 
+	complex messages required when selling medical equipment.
+</p>
+<!-- <p><a href="/XXXXXXX/">&gt;&gt; MORE</a></p>  -->
+</div>
+</div>
+</div>
+<div class="slide">
+<a href="/sm-home1/"><img class="slide-image" id="SMSliderImg5" alt="" src="/Images/SM_Slider_5_Education.jpg" /></a>
+<div class="caption">
+<div class="inner">
+<h2>EDUCATION</h2>
+<p>The importance of targeting the different learning styles of different students is well documented. SketchMotion targets the learning styles of visual students through both pictures and text, auditory students & to some extent kinesthetic students, while the combination of mediums also delivers maximum impact for any particular individual.
+</p>
+<!-- <p><a href="/XXXXXXX/">&gt;&gt; MORE</a></p>  -->
+</div>
+</div>
+</div>
+<div class="slide">
+<a href="/sm-home1/"><img class="slide-image" id="SMSliderImg6" alt="" src="/Images/SM_Slider_6_Politics.jpg" /></a>
+<div class="caption">
+<div class="inner">
+<h2>POLITICS</h2>
+<p>Successful political communications must to the point, simple, emotionally engaging and immediately compelling. 
+	The important issues of government are often complex and boring, and can lack obvious connections to 
+	everyday life. SketchMotion videos combined with effective scenarios and stories, create 
+	impactful communications which resonate & stick in the minds of your audience - the voters.
+</p>
+<!-- <p><a href="/XXXXXXX/">&gt;&gt; MORE</a></p>  -->
+</div>
+</div>
+</div>
+</div>
+<div id="slide-pager"></div>
+
+<!--  XXXXXXXXXXXXXXXXXXXX -->
+        </div>   <!--  End div Slideshow -->
