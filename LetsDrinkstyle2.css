@@ -5,6 +5,9 @@
 body
 {
 	font:.9em/1em Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-image: url(Images/wood.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1
@@ -163,6 +166,7 @@ h4{
 	/*padding:6px;*/
 	
 }
+
 .suggested
 {
 	width:80%;
@@ -170,7 +174,7 @@ h4{
 	margin-right:auto;
 	text-align:center;
 	font-size: 1em;
-	font-family:h4;
+	
 }
 #query
 {
@@ -223,14 +227,14 @@ h4{
 
 .Footer /* div for future use */
 {
-	width:100%;
+	width:80%;
 	border:0;
 	clear:both;
 	margin-left:auto;
 	margin-right:auto;
-	border-color:black;
+	border-color:white;
 	border-style:solid;
-	background-color:black;
+	background-color:white;
 	font-size:1em;
 	text-align:center;
 

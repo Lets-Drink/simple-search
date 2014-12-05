@@ -59,6 +59,18 @@
                  });  
                  
         </script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+  <script type="text/javascript"> 
+  	$(function(){ 
+  	    $("#DivB").hide(); 
+
+		$("#ClickMe").click(function() { 
+ 			$("#DivA").hide(); 
+ 			$("#DivB").show(); 
+		}); 
+	}) 
+	</script> 
     </head>
     <body>
         <div class="WholePage">
@@ -96,7 +108,7 @@
                     
                     
                     <div class="CenterTopImageDiv">
-                        <img class="CenterTopImage" alt="Lets Drink !!!" src="LetsDrink6.png" width="100%"  />
+                        <img class="CenterTopImage" alt="Lets Drink !!!" src="LetsDrink7.png" width="100%"  />
                     </div>
 
                     
@@ -116,24 +128,21 @@
                         <br/>
                         <br/>
                         <br/>
-                        <br/>  
                         <br/>
                         <br/>
                         <br/>
-                        <br/>
-                        <br/>
-                                                                
+                                                                                       
                         <div class="searchboxclass" id="searchbox">
-                            <form method="post">
+                            <!--<form method="post"> -->
                                 <input name="Enter Search" id ="query" type="text" />
-                                <BUTTON TYPE="submit" class="OurButtons">
+                                <button id="ClickMe" BUTTON TYPE="submit" class="OurButtons">
                                 Search
                                 </BUTTON>
                                 <div class="spellchecking">
                                     Did you mean: 
                                     <span class="spellcheck-container"></span>
                                 </div>
-                            </form>
+                           <!-- </form> -->
                         </div>
                         
                        <!-- <div class="suggested">
@@ -159,10 +168,18 @@
                 <!-- -End of CenterPannel   -->
             </div>
             <!-- -End of  LTBody  -->
+           <br/>
            <div class="Footer">
-                <br/>
-                			
-                <!-- Container where results will be filled in -->
+ 
+
+	<div id="DivA"> 
+		<h2>Div A</h2>
+		<!--<button id="ClickMe">Click Me</button> -->
+	</div> 
+	
+ 	<div id="DivB"> 
+ 		<h2>Div B</h2> 
+ 		<!-- Container where results will be filled in -->
                 <div id="results"></div>
                 <!-- Template for results.  Each result is then later inserted into the results container after we get results from a query -->
                 <div class="template result">
@@ -175,7 +192,8 @@
                     <div class="content"></div>
                 </div>
                 <span class="template spellcheck-template spellcheck"></span>
-            </div>
-        </div> 
+
+	</div> 
+	</div> 
     </body>
 </html>
