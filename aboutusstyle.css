@@ -1,0 +1,470 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+}
+
+body {
+	font-family: 'Poiret One', cursive;
+	font-size: 20px;
+	color: #000000;
+	background: #ffffff;
+	background:url("Images/wood.jpg");
+	background-repeat: repeat;
+    background-attachment: fixed;
+	background-size: 110%;
+}
+
+#page-container {
+	height: 5000px;
+	width: 1300px;
+	margin: auto;
+	background-color: rgba(170,182,162,1.0);
+	margin-top: 20px;
+	border: 2px solid black;
+	box-shadow: 5px 5px 10px #555;
+}
+
+#home-logo img {
+	float: center;
+}
+
+#home-logo img {
+	height: 100px;
+	width: 200px;
+}
+
+#header {
+	background-color: white;
+	float: center;
+	text-align: center;
+	width: 50%;
+	margin-left: 25%;
+	border: 1px solid black;
+	margin-bottom: 30px;
+	line-height: 15px;
+}
+
+#about-statement {
+	font-weight: bold;
+	float: center;
+	text-align: left;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 50px;
+}
+
+#lets-drink-is {
+	background-color: white;
+	float: center;
+	text-align: center;
+	width: 50%;
+	margin-left: 25%;
+	border: 1px solid black;
+	margin-bottom: 30px;
+	line-height: 15px;
+}
+
+#personnel-pics {
+	height: 500px;
+	margin-top: 50px;
+}
+
+#jerissa {
+	height: 250px;
+	width: 250px;
+	margin-left: 140px;
+	display: inline-block;
+}
+
+#jerissa img {
+	height: 250px;
+	width: 250px;
+	border: 5px solid black;
+}
+
+#josh {
+	height: 250px;
+	width: 250px;
+	display: inline-block;
+}
+
+#josh img {
+	height: 250px;
+	width: 250px;
+	border: 5px solid black;
+}
+
+#chris {
+	height: 250px;
+	width: 250px;
+	display: inline-block;
+}
+
+#chris img {
+	height: 250px;
+	width: 250px;
+	border: 5px solid black;
+}
+
+#eric {
+	height: 250px;
+	width: 250px;
+	display: inline-block;
+}
+
+#eric img {
+	height: 250px;
+	width: 250px;
+	border: 5px solid black;
+}
+
+#jerissa-nametag {
+	background-color: white;
+	margin-left: 160px;
+	float: left;
+	text-align: center;
+	margin-top: 15px;
+	height: auto;
+	width: 200px;
+	border: 1px solid black;
+}
+
+#jerissa-nametag p {
+	font-weight: bold;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#josh-nametag {
+	background-color: white;
+	margin-left: 60px;
+	float: left;
+	text-align: center;
+	margin-top: 15px;
+	height: auto;
+	width: 200px;
+	border: 1px solid black;
+}
+
+#josh-nametag p {
+	font-weight: bold;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+#chris-nametag {
+	background-color: white;
+	margin-left: 60px;
+	float: left;
+	text-align: center;
+	margin-top: 15px;
+	height: auto;
+	width: 200px;
+	border: 1px solid black;
+}
+
+#chris-nametag p {
+	font-weight: bold;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#eric-nametag {
+	background-color: white;
+	margin-left: 55px;
+	float: left;
+	text-align: center;
+	margin-top: 15px;
+	height: auto;
+	width: 200px;
+	border: 1px solid black;
+}
+
+#eric-nametag p {
+	font-weight: bold;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#marketing-header {
+	background-color: white;
+	float: center;
+	text-align: center;
+	width: 50%;
+	margin-left: 25%;
+	border: 1px solid black;
+	margin-bottom: 30px;
+	line-height: 15px;
+}
+
+#marketing-plan {
+	font-weight: bold;
+	float: center;
+	text-align: left;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 50px;
+}
+
+#technical-header {
+	background-color: white;
+	float: center;
+	text-align: center;
+	width: 50%;
+	margin-left: 25%;
+	border: 1px solid black;
+	margin-bottom: 30px;
+	line-height: 15px;
+}
+
+#technical-plan {
+	font-weight: bold;
+	float: center;
+	text-align: left;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 50px;
+}
+
+#results-header {
+	background-color: white;
+	float: center;
+	text-align: center;
+	width: 50%;
+	margin-left: 25%;
+	border: 1px solid black;
+	margin-bottom: 30px;
+	line-height: 15px;
+}
+
+#results {
+	font-weight: bold;
+	float: center;
+	text-align: left;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 50px;
+}
+
+#videos-header {
+	background-color: white;
+	float: center;
+	text-align: center;
+	width: 50%;
+	margin-left: 25%;
+	margin-bottom: 60px;
+	border: 1px solid black;
+	line-height: 15px;
+}
+
+#both-videos {
+	float: center;
+	margin-bottom: 60px;
+}
+
+#youtube {
+	margin-left: 50px;
+}
+
+#contact-header {
+	background-color: white;
+	float: left;
+	text-align: center;
+	width: 40%;
+	margin-left: 5%;
+	line-height: 15px;
+	border: 1px solid black;
+}
+
+#contact-info {
+	float: left;
+	margin-left: 5%;
+	margin-top: 25px;
+	font-weight: bold;
+}
+
+#follow-header {
+	background-color: white;
+	float: left;
+	text-align: center;
+	width: 40%;
+	margin-left: 10%;
+	line-height: 15px;
+	border: 1px solid black;
+}
+
+#social-networks {
+	margin-top: 25px;
+}
+
+#facebook img {
+	height: 100px;
+	width: 100px;
+	float: right;
+	margin-top: 25px;
+	margin-right: 8%;
+}
+
+#twitter img {
+	height: 100px;
+	width: 100px;
+	float: right;
+	margin-top: 25px;
+	margin-right: 8%;
+}
+
+#google-plus img {
+	height: 101px;
+	width: 101px;
+	float: right;
+	margin-right: 5%;
+	margin-top: 25px;
+}
+
+#goals-header {
+	background-color: white;
+	float: center;
+	text-align: center;
+	width: 25%;
+	margin-left: 150px;
+	border: 1px solid black;
+	margin-bottom: 30px;
+	line-height: 15px;
+}
+
+#marketing-goals {
+	font-weight: bold;
+	float: center;
+	text-align: left;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 50px;
+}
+
+#users-header {
+	background-color: white;
+	float: center;
+	text-align: center;
+	width: 25%;
+	margin-left: 150px;
+	border: 1px solid black;
+	margin-bottom: 30px;
+	line-height: 15px;
+}
+
+#users {
+	font-weight: bold;
+	float: center;
+	text-align: left;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 50px;
+}
+
+#competitors-header {
+	background-color: white;
+	float: center;
+	text-align: center;
+	width: 25%;
+	margin-left: 150px;
+	border: 1px solid black;
+	margin-bottom: 30px;
+	line-height: 15px;
+}
+
+#our-competitors {
+	font-weight: bold;
+	float: center;
+	text-align: left;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 50px;
+}
+
+#collaborators-header {
+	background-color: white;
+	float: center;
+	text-align: center;
+	width: 25%;
+	margin-left: 150px;
+	border: 1px solid black;
+	margin-bottom: 30px;
+	line-height: 15px;
+}
+
+#our-collaborators {
+	font-weight: bold;
+	float: center;
+	text-align: left;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 50px;
+}
+
+#technical-header {
+	background-color: white;
+	float: center;
+	text-align: center;
+	width: 50%;
+	margin-left: 25%;
+	border: 1px solid black;
+	margin-bottom: 30px;
+	line-height: 15px;
+}
+
+#features-header {
+	background-color: white;
+	float: center;
+	text-align: center;
+	width: 25%;
+	margin-left: 150px;
+	border: 1px solid black;
+	margin-bottom: 30px;
+	line-height: 15px;
+}
+
+#implemented-features {
+	font-weight: bold;
+	float: center;
+	text-align: left;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 50px;
+}
+
+#results-header {
+	background-color: white;
+	float: center;
+	text-align: center;
+	width: 50%;
+	margin-left: 25%;
+	border: 1px solid black;
+	margin-bottom: 30px;
+	line-height: 15px;
+}
+
+#footer {
+	clear: both;
+	height: auto;
+	width: 100%;
+	background-color: rgba(176,176,202,1.0);
+	text-align: center;
+	font-size: 10px;
+	position: fixed;
+	bottom: 0px;
+	line-height: 5px;
+	font-weight: bold;
+}
+
+
+
