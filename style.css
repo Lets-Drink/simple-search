@@ -228,13 +228,18 @@ h4{
 }
 .capbutton
 {
-z-index:5; /* Define render order before .CenterTopContent. */
-padding-right:2em;
-padding-left:2em;
-width:inherit;
-height:10em;
-
+	z-index:5; /* Define render order before .CenterTopContent. */
+	padding-right:2em;
+	padding-left:2em;
+	width:inherit;
+	height:10em;
 }
+.results
+{
+	background:white;
+	opacity:.4;
+}
+
 .capImages
 {
 	z-index:5; /* Define render order before .CenterTopContent. */
