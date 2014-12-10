@@ -71,6 +71,27 @@
 		}); 
 	}) 
 	</script> 
+	
+<script type="text/javascript">
+		function Clickme2(){
+		var link=new Array()
+		var myrandom = Math.round(Math.random()*9)
+		link[1]="http://www.makemeacocktail.com/list/327/bond-cocktails/"
+		link[2]="http://www.makemeacocktail.com/cocktail/5833/vodka-and-tonic/"
+		link[3]="http://www.beeradvocate.com/place/"
+		link[4]="http://www.makemeacocktail.com/cocktail/7290/tequila-snowfall-sunrise/"
+		link[5]="http://www.makemeacocktail.com/cocktail/7286/madam-peppercorn/"
+		link[6]="http://www.foodandwine.com/wine"
+		link[7]="http://www.beeradvocate.com/beer/101/"
+		link[8]="http://www.cocktailbuilder.com/blog/feed/"
+		link[9]="http://www.epicurious.com/recipesmenus/drinks"
+		link[10]="http://www.cocktailbuilder.com/blog/best-cocktail-bitters-you-need-to-own/"
+		
+		window.location= link[myrandom]
+		}
+				
+</script> 
+
     </head>
     <body>
         <div class="WholePage">
@@ -108,7 +129,7 @@
                     
                     
                     <div class="CenterTopImageDiv">
-                        <img class="CenterTopImage" alt="Lets Drink !!!" src="LetsDrink7.png" width="100%"  />
+                        <img class="CenterTopImage" alt="Lets Drink !!!" src="LetsDrink8.png" width="100%"  />
                     </div>
 
                     
@@ -131,13 +152,14 @@
                         <br/>
                         <br/>
                         <br/>
+                        <br/>
                                                                                        
                         <div class="searchboxclass" id="searchbox">
                             <!--<form method="post"> -->
                                 <input name="Enter Search" id ="query" type="text" />
-                                <button id="ClickMe" BUTTON TYPE="submit" class="OurButtons">
+                                <button id="ClickMe" type="submit" class="OurButtons">
                                 Search
-                                </BUTTON>
+                                </button>
                                 <div class="spellchecking">
                                     Did you mean: 
                                     <span class="spellcheck-container"></span>
@@ -162,38 +184,39 @@
                                 <input name="Checkbox3" type="checkbox" value="spirit"/> Cocktails
                             </form>
                         </div> -->
+                <div class="options">
+					 
+						<div id="DivA"> 			  
+							<img class="capImages" alt="Random Drink" src="Images/randomCap.png" width="15%" onclick ="Clickme2()" /> 
+							<a href="http://www.makemeacocktail.com/cocktail/7288/white-russian-christmas/"><img class="capImages" alt="Drink of the season" src="Images/seasonCap.png" width="15%"  /></a>
+							<img class="capImages" alt="About us" src="Images/aboutUs.png" width="15%"  />
+						</div> 
+						
+					 	<div id="DivB">  
+					 		<!-- Container where results will be filled in -->
+					                <div id="results"></div>
+					                <!-- Template for results.  Each result is then later inserted into the results container after we get results from a query -->
+					                <div class="template result">
+					                    <div class="title">
+					                        <a href="">
+					                            <h3></h3>
+					                        </a>
+					                    </div>
+					                    <div class="url"></div>
+					                    <div class="content"></div>
+					                </div>
+					                <span class="template spellcheck-template spellcheck"></span>
+					
+						</div> 
+					</div> 
+
                     </div>
                     <!-- -End of CenterTopContent   -->
                 </div>
                 <!-- -End of CenterPannel   -->
             </div>
             <!-- -End of  LTBody  -->
-           <br/>
-           <div class="Footer">
- 
-
-	<div id="DivA"> 
-		<h2>Div A</h2>
-		<!--<button id="ClickMe">Click Me</button> -->
-	</div> 
-	
- 	<div id="DivB"> 
- 		<h2>Div B</h2> 
- 		<!-- Container where results will be filled in -->
-                <div id="results"></div>
-                <!-- Template for results.  Each result is then later inserted into the results container after we get results from a query -->
-                <div class="template result">
-                    <div class="title">
-                        <a href="">
-                            <h3></h3>
-                        </a>
-                    </div>
-                    <div class="url"></div>
-                    <div class="content"></div>
-                </div>
-                <span class="template spellcheck-template spellcheck"></span>
-
-	</div> 
-	</div> 
+          	
+	</div>
     </body>
 </html>
