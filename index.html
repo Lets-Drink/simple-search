@@ -1,60 +1,224 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <!-- This should be filled with keywords that best describe your search engine and the things that you are targeting -->
-    <meta name="keywords" content="Cocktail Recipes, Cocktail Builder, Mixed Drinks, Easy Drink Recipes"> 
-    <!-- This should be your team name -->
-    <meta name="author" content="Let's Drink">
-    <!-- The title of you're webpage  Test -->
-    <title>Let's Drink</title>
-    <!-- Link to your style sheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!-- Scripts to be loaded -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="js/SpellCheckTest.js" type="text/javascript"></script>
-    <script src="js/simpleSearch.js" type="text/javascript"></script>
-    <!-- Google Analytics Section -->
-    <!-- After signing up for a google analytics account, you should add your website, and paste the script needed for tracking here -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <meta charset="UTF-8"/>
+        <!-- This should be filled with keywords that best describe your search engine and the things that you are targeting -->
+        <meta name="keywords" content="Cocktail Recipes, Cocktail Builder, Mixed Drinks, Easy Drink Recipes"/>
+        <!-- This should be your team name -->
+        <meta name="author" content="Let's Drink"/>
+        <!-- The title of you're webpage  Test -->
+        <title>Let's Drink</title>
+        <!-- Link to your style sheet -->
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <!-- Scripts to be loaded -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+        <script src="js/SpellCheckTest.js" type="text/javascript"></script>
+        <script src="js/simpleSearch.js" type="text/javascript"></script>
+        <!-- Google Analytics Section -->
+        <!-- After signing up for a google analytics account, you should add your website, and paste the script needed for tracking here -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            
+            ga('create', 'UA-56210405-1', 'auto');
+            ga('send', 'pageview');
+            
+        </script>
+        <script language="JavaScript" type="text/javascript">
+            <!--Got following code from http://stackoverflow.com/questions/5358183/is-it-possible-to-dynamically-scale-text-size-based-on-browser-width -->
+            
+            $( document ).ready( function() {
+                     var $body = $('body'); //Cache this for performance
+            // window.alert("Setting Font Size");
+            
+                     var setBodyScale = function() {
+                         var scaleSource = $body.width(),
+                             scaleFactor = 0.1,                     
+                             maxScale = 600,
+                             minScale = 30; //Tweak these values to taste
+            
+                         var fontSize = scaleSource * scaleFactor; //Multiply the width of the body by the scaling factor:
+            
+                         if (fontSize > maxScale) fontSize = maxScale;
+                         if (fontSize < minScale) fontSize = minScale; //Enforce the minimum and maximums
+            
+                         $('body').css('font-size', fontSize + '%');
+                     }
+            
+                     $(window).resize(function(){
+                         setBodyScale();
+                     });
+            
+                     //Fire it when the page first loads:
+                     setBodyScale();
+                 });  
+                 
+        </script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+  <script type="text/javascript"> 
+  	$(function(){ 
+  	    $("#DivB").hide(); 
 
-      ga('create', 'UA-56210405-1', 'auto');
-      ga('send', 'pageview');
+		$("#ClickMe").click(function() { 
+ 			$("#DivA").hide(); 
+ 			$("#DivB").show(); 
+		}); 
+	}) 
+	</script> 
+	
+<script type="text/javascript">
+		function Clickme2(){
+		var link=new Array()
+		var myrandom = Math.round(Math.random()*9)
+		link[1]="http://www.makemeacocktail.com/list/327/bond-cocktails/"
+		link[2]="http://www.makemeacocktail.com/cocktail/5833/vodka-and-tonic/"
+		link[3]="http://www.beeradvocate.com/place/"
+		link[4]="http://www.makemeacocktail.com/cocktail/7290/tequila-snowfall-sunrise/"
+		link[5]="http://www.makemeacocktail.com/cocktail/7286/madam-peppercorn/"
+		link[6]="http://www.foodandwine.com/wine"
+		link[7]="http://www.beeradvocate.com/beer/101/"
+		link[8]="http://www.cocktailbuilder.com/blog/feed/"
+		link[9]="http://www.epicurious.com/recipesmenus/drinks"
+		link[10]="http://www.cocktailbuilder.com/blog/best-cocktail-bitters-you-need-to-own/"
+		
+		window.location= link[myrandom]
+		}
+				
+</script> 
 
-    </script>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Let's Drink</h1>
-      <div id="searchbox">
-      	<!-- The input box where users will enter their query -->
-      	<input id="query" type="text" placeholder="Search here..." required></input>
-      	<button id="search">Search</button>
-        <div class="spellchecking">
-          Did you mean: 
-          <span class="spellcheck-container"></span>
-        </div>
-      </div>
+    </head>
+    <body>
+        <div class="WholePage">
+            <div class="Header">
+                <!--Nothing to see here !!   -->
+            </div>
+            <div class="LTBody">
+                <!-- <div class="LeftPannel" > 
+                    <br/>
+                    <br/>
+                    </div>
+                    <div class="RightPannel" > 
+                    
+                    </div> -->
+                <div class="CenterPannel">
+                    <div class="CenterBackground cycle-slideshow"  data-cycle-timeout="5000" data-cycle-pager="#slide-pager" data-cycle-slides="&gt; div" data-cycle-log="false">
+                        <div class="slide">
+                            <img class="slide-image" id="SMSliderImg1" alt="" src="Images/Beer.jpg" width="100%"  />
+                        </div>
+                        <div class="slide">
+                            <img class="slide-image" id="SMSliderImg2" alt="" src="Images/two.jpg" width="100%"  />
+                        </div>
+                                                <div class="slide">
+                            <img class="slide-image" id="SMSliderImg5" alt="" src="Images/barrel.jpg" width="100%"  />
+                        </div>
+                        <div class="slide">
+                            <img class="slide-image" id="SMSliderImg6" alt="" src="Images/lime2.jpg" width="100%"  />
+                        </div>
+                        <div class="slide">
+                            <img class="slide-image" id="SMSliderImg6" alt="" src="Images/wine.jpg" width="100%"  />
+                        </div>
 
-      <!-- Container where results will be filled in -->
-      <div id="results"></div>
+                    </div>
+                    <!--   END OF CenterBackground    -->
+                    
+                    
+                    <div class="CenterTopImageDiv">
+                        <img class="CenterTopImage" alt="Lets Drink !!!" src="LetsDrink8.png" width="100%"  />
+                    </div>
 
-      <!-- Template for results.  Each result is then later inserted into the results container after we get results from a query -->
-      <div class="template result">
-        <div class="title">
-          <a href="">
-            <h3></h3>
-          </a>
-        </div>
-        <div class="url"></div>
-        <div class="content"></div> 
-      </div>
-      
-      <span class="template spellcheck-template spellcheck"></span>
-    </div> <!-- container -->
-  </body>
+                    
+                    
+                    <div class="CenterTopContent">
+                        <br></br>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                                                                                       
+                        <div class="searchboxclass" id="searchbox">
+                            <!--<form method="post"> -->
+                                <input name="Enter Search" id ="query" type="text" />
+                                <button id="ClickMe" type="submit" class="OurButtons">
+                                Search
+                                </button>
+                                <div class="spellchecking">
+                                    Did you mean: 
+                                    <span class="spellcheck-container"></span>
+                                </div>
+                           <!-- </form> -->
+                        </div>
+                        
+                       <!-- <div class="suggested">
+                        <br/>
+                        Long island ice tea, Irish car bomb, white Russian, black velvet, brass monkey, Brandy sour, 
+                        Mimosa, Gin and Tonic, Martini, Shirley temple, Ramos gin fizz, White lady, Blue Hawaiian, Margarita,
+                        Rum and Coke, Tequila Sunrise, Tequila Slammer, Agent Orange, Black Russian, Bloody Mary, Blue Lagoon,
+                        Cosmopolitan, Fizzy apple cocktail, Flirtini, The Goldeneye, Kamikaze, Mudslide, Orange Tundra, Screwdriver,
+                        Sex on the Beach, Sake Bomb, Bourbon Lancer, Irish Coffee, Jungle Juice, Manhattan, Lynchburg Lemonade,
+                        Missouri Mule, Old Fashioned, Rob Roy, Rusty Nail, Three Wise Men, Whiskey sour, Blow Job, Bushwacker,
+                        Orgasm, Buttery Nipple, Baby Guinness, Skittle Bomb, Nuclear Iced Tea, Jägerbomb
+                        </div> -->
+                        <!-- <div class="CenterBottom">
+                            <form action = "">
+                                <input name="Checkbox1" type="checkbox" value="beer"/> Beers
+                                <input name="Checkbox2" type="checkbox" value="wines"/> Wines
+                                <input name="Checkbox3" type="checkbox" value="spirit"/> Cocktails
+                            </form>
+                        </div> -->
+                <div class="options">
+					 
+						<div id="DivA"> 			  
+							<img class="capImages" alt="Random Drink" src="Images/randomCap.png" width="15%" onclick ="Clickme2()" /> 
+							<a href="http://www.makemeacocktail.com/cocktail/7288/white-russian-christmas/"><img class="capImages" alt="Drink of the season" src="Images/seasonCap.png" width="15%"  /></a>
+							<img class="capImages" alt="About us" src="Images/aboutUs.png" width="15%"  />
+						</div> 
+						
+					 	<div id="DivB">  
+					 		<!-- Container where results will be filled in -->
+					 				<br/>
+					 				<br/>
+					                <div class="results" id="results"></div>
+					                <!-- Template for results.  Each result is then later inserted into the results container after we get results from a query -->
+					                <div class="template result">
+					                    <div class="title">
+					                        <a href="">
+					                            <h3></h3>
+					                        </a>
+					                    </div>
+					                    <div class="url"></div>
+					                    <div class="content"></div>
+					                </div>
+					                <span class="template spellcheck-template spellcheck"></span>
+					
+						</div> 
+					</div> 
+
+                    </div>
+                    <!-- -End of CenterTopContent   -->
+                </div>
+                <!-- -End of CenterPannel   -->
+            </div>
+            <!-- -End of  LTBody  -->
+          	
+	</div>
+    </body>
 </html>

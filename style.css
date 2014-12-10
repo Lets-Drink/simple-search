@@ -1,0 +1,281 @@
+﻿
+@import url('css/reset.css');
+
+/*Define font styles */
+body
+{
+	font:.9em/1em Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-image: url(Images/wood.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+
+h1
+{
+	font:2em/1em Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+h2
+{
+	font:1.5em/1em Arial, Helvetica, sans-serif;
+}
+
+h3
+{
+	font:bold 1.2em/1em Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+h4{
+	color:white;
+}
+/* end of font defining */
+.WholePage
+{
+	width:100%;	/*use full width of page */
+	float:left;
+	border:0;
+	border-color:white;
+	border-style:solid;
+	/*background-color:white;*/
+	margin-top:auto;
+	margin-bottom:auto;
+	
+
+}
+
+.Header /* Div for future use (search results page) */
+{
+	width:100%;	/*use full width of page */
+	color:lime;
+	font-size:1em;
+	text-align:center; /* allign center */
+	border:0;
+	border-color:white;
+	border-style:solid;
+}
+
+.LTBody
+{
+	width:100%;
+	border:0;
+	border-color:white;
+	border-style:solid;
+}
+
+ .LeftPannel
+{
+	/* make left pannel 10% of total width */
+	/*width:10%; 
+	border:thin;
+	float:left;
+	border-color:white;
+	border-style:solid;
+	padding:6px; */
+	/* Give space inside border */ 
+}  
+
+.CenterPannel
+{
+	position:relative; /* Set this div as most recent ancestor with position relative to anchor later absoulute positioning. */
+	width:100%;
+	border:0;
+	margin-left:auto;
+	margin-right:auto; /* CSS trick to center DIV */
+	border-color:white;
+	border-style:solid;
+	min-height:inherit;
+	}
+
+.CenterTopImageDiv
+{
+	width:100%;
+	border:0;
+	z-index:4; /* Define render order before .CenterTopContent. */
+	border-color:white;
+	border-style:solid;
+}
+.CenterTopImage
+{
+	z-index:4; /* Define render order before .CenterTopContent. */
+}
+
+
+.CenterBackground
+{
+	
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0; 
+
+	width:100%;
+	margin-left:auto;
+	margin-right:auto; /* CSS trick to center DIV */
+	text-align:center; /* center text*/
+	border:0;
+	z-index:-1; /* Define render order before .CenterTopContent. */
+	border-color:orange;
+	border-style:solid;
+}
+
+.slide
+{
+	
+	width:100%;
+	margin-left:auto;
+	margin-right:auto; /* CSS trick to center DIV */
+	text-align:center; /* center text*/
+	border:0;
+	z-index:1; /* Define render order before .CenterTopContent. */
+	border-color:orange;
+	border-style:solid;
+	min-height:inherit;	
+}
+
+.slide-image
+{
+	z-index:1; /* Define render order before .CenterTopContent. */
+}
+
+
+
+.CenterTopContent
+{
+	position:absolute; /* this absolute positioning will be relative to earlier ".CenterPannel" which is defined with relative positioning. */
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	width:100%;
+	border:0;
+	z-index:5; /* Define render order after center top image. */
+	font-size:1em; /* Use of 1em allows font to scale with default body font size as set by JS which scales font size with window size. */
+	text-align:center; /* center text*/
+	border-color:white;
+	border-style:solid;
+	/*padding:6px; allows space inside border. */
+}
+
+.searchboxclass
+{
+	width:100%;
+	border:0;
+	margin-left:auto;
+	margin-right:auto; /* CSS trick to center DIV */
+	border-style:solid;
+	/*padding:6px;*/
+	
+}
+
+.suggested
+{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-size: 1em;
+	
+}
+#query
+{
+	width:17em;
+	opacity:0.5;
+}
+.OurButtons
+{
+	width:5em;
+	border-width:.2em;
+	font-size:1.2em;
+	opacity:0.8;
+}
+/*.suggestion {
+    cursor: pointer;
+    border-bottom: 1px solid #EEE;
+}
+
+.suggestion:hover {
+    background-color: #EEE;
+}*/
+
+.spellchecking {
+    margin-top: 10em;
+}
+
+.CenterBottom
+{
+	width:100%;
+	border:0;
+	font-size:2em;
+	text-align:center;
+	border-color:white;
+	border-style:solid;
+	/*padding:6px;*/
+	z-index:4;
+	bottom:auto;
+	
+}
+
+.RightPannel
+{
+/*
+	width:10%;
+	border:thin;
+	float:right;
+	border-color:white;
+	border-style:solid;
+	padding:6px;
+	*/
+}
+.capbutton
+{
+	z-index:5; /* Define render order before .CenterTopContent. */
+	padding-right:2em;
+	padding-left:2em;
+	width:inherit;
+	height:10em;
+}
+.results
+{
+	background-color:rgba(255,255,255,0.3);
+}
+
+.capImages
+{
+	z-index:5; /* Define render order before .CenterTopContent. */
+	padding-right:4em;
+	padding-left:4em;
+	
+	
+}
+
+
+
+.options /* div for future use */
+{
+	width:80%;
+	border:0;
+	clear:both;
+	margin-left:auto;
+	margin-right:auto;
+	border-color:white;
+	border-style:solid;
+	font-size:1em;
+	text-align:center;
+
+}
+
+.spellcheck {
+    text-align: center;
+    font-style: italic;
+    cursor: pointer;
+}
+
+#Button1
+{
+	background-image:url('SearchIcon1.png');  /* magnifying glass image */
+}
+
+html,input,select,textarea
+{
+	font-size:100%;
+}

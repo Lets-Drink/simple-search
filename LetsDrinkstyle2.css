@@ -6,7 +6,7 @@ body
 {
 	font:.9em/1em Verdana, Geneva, Arial, Helvetica, sans-serif;
 	background-image: url(Images/wood.jpg);
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     background-attachment: fixed;
 }
 
@@ -178,13 +178,15 @@ h4{
 }
 #query
 {
-	width:15em;
+	width:17em;
+	opacity:0.5;
 }
 .OurButtons
 {
 	width:5em;
 	border-width:.2em;
-	font-size:1em
+	font-size:1.2em;
+	opacity:0.8;
 }
 /*.suggestion {
     cursor: pointer;
@@ -224,8 +226,27 @@ h4{
 	padding:6px;
 	*/
 }
+.capbutton
+{
+z-index:5; /* Define render order before .CenterTopContent. */
+padding-right:2em;
+padding-left:2em;
+width:inherit;
+height:10em;
 
-.Footer /* div for future use */
+}
+.capImages
+{
+	z-index:5; /* Define render order before .CenterTopContent. */
+	padding-right:4em;
+	padding-left:4em;
+	
+	
+}
+
+
+
+.options /* div for future use */
 {
 	width:80%;
 	border:0;
@@ -234,7 +255,6 @@ h4{
 	margin-right:auto;
 	border-color:white;
 	border-style:solid;
-	background-color:white;
 	font-size:1em;
 	text-align:center;
 
