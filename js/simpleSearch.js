@@ -32,15 +32,15 @@ function search(query, $container, $template){
         url: 'http://is-info320t5.ischool.uw.edu:8080/solr-example/collection1/select', 
         dataType: 'JSONP',
         data: {
-            'q': query,
+            'q': "cocktail" + query,
             'qf': 'content title^3.0',
             'wt': 'json',
             'indent': 'false',
             'defType': 'edismax',
             'spellcheck': 'true',
             'spellcheck.q': query,
-            "hl.simple.pre":"<em>",
-            "hl.simple.post":"</em>",
+            "hl.simple.pre":"<b>",
+            "hl.simple.post":"</b>",
             "hl.fl":"content",
             "hl":"true"
         },
