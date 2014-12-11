@@ -237,6 +237,7 @@ h4{
 .results
 {
 	background-color:rgba(255,255,255,0.3);
+   padding: 10px;	
 }
 
 .capImages
@@ -245,10 +246,12 @@ h4{
 	padding-right:4em;
 	padding-left:4em;
 	
-	
+		
 }
 
-
+.capImages:hover {
+	cursor: pointer;
+}
 
 .options /* div for future use */
 {

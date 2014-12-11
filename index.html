@@ -155,16 +155,13 @@
                         <br/>
                                                                                        
                         <div class="searchboxclass" id="searchbox">
-                            <!--<form method="post"> -->
+                            <form id="searchForm"> 
                                 <input name="Enter Search" id ="query" type="text" />
                                 <button id="ClickMe" type="submit" class="OurButtons">
                                 Search
                                 </button>
-                                <div class="spellchecking">
-                                    Did you mean: 
-                                    <span class="spellcheck-container"></span>
-                                </div>
-                           <!-- </form> -->
+                                
+                           </form>
                         </div>
                         
                        <!-- <div class="suggested">
@@ -196,9 +193,13 @@
 						
 					 	<div id="DivB">  
 					 		<!-- Container where results will be filled in -->
+                                    <br/>
+                                    <br/>
+                                    <div class="spellchecking">
+                                        Did you mean: <span class="spellcheck-container"></span>
+                                    </div>
 					 				<span class="template spellcheck-template spellcheck"></span>
-					 				<br/>
-					 				<br/>
+					 				
 					                <div class="results" id="results"></div>
 					                <!-- Template for results.  Each result is then later inserted into the results container after we get results from a query -->
 					                <div class="template result">

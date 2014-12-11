@@ -6,17 +6,23 @@ $(function(){
         search( $( "input#query" ).val(), $( "#results" ), $( ".template.result" ) );
     };
 
-    $( "button#search" ).click(function() {simpleSearch()} );
+    $( "#ClickMe" ).click(function() {simpleSearch()});
+    $("#searchForm").submit(function(){
+        simpleSearch();
+        return false;
+    });
 
     // Performs search when 'enter' key is pressed
-    $( "input#query" ).keypress(function( event ) {
-        if ( event.which == 13 ) simpleSearch();
+    $( "input #query" ).keypress(function( event ) {
+        if ( event.which == 13 ) 
+            simpleSearch();
+        console.log("input#query");
     });
 
     // Performs a search on the key up of the search box
-    $("#query").keyup(function() {
-        simpleSearch();
-    });
+    // $("#query").keyup(function() {
+    //     simpleSearch();
+    // });
 
     $(".spellchecking").hide();
     $(".template").hide();
@@ -32,7 +38,7 @@ function search(query, $container, $template){
         url: 'http://is-info320t5.ischool.uw.edu:8080/solr-example/collection1/select', 
         dataType: 'JSONP',
         data: {
-            'q': "cocktail" + query,
+            'q': query,
             'qf': 'content title^3.0',
             'wt': 'json',
             'indent': 'false',
@@ -103,21 +109,26 @@ function renderQuerySuggestion(suggestions) {
 // the appropriate HTML
 // Output: void
 function renderResults(docs, highlight, $container, $template){
-    $container.empty(); // If there are any previous results, remove them
-    var result;
-    $.each(docs, function(index, doc){
-        result = $template.clone();
-        result.find( ".title > a" )
-            .prop( "href", doc.url)
-            .find( "h3" )
-            .append( doc.title );
-        result.find( ".url" ).append( doc.url );
-        // result.find( ".content" ).append( maxWords(doc.content, 20) );
-        result.find( ".content").append(highlight[doc.url].content[0] + "...");
-        result.removeClass( "template" );
-        result.fadeIn(500);
-        $container.append(result);
-    });
+    if (docs.length == 0) {
+        $container.html("No results founds");
+    } else {
+
+        $container.empty(); // If there are any previous results, remove them
+        var result;
+        $.each(docs, function(index, doc){
+            result = $template.clone();
+            result.find( ".title > a" )
+                .prop( "href", doc.url)
+                .find( "h3" )
+                .append( doc.title );
+            result.find( ".url" ).append( doc.url );
+            // result.find( ".content" ).append( maxWords(doc.content, 20) );
+            result.find( ".content").append(highlight[doc.url].content[0] + "...");
+            result.removeClass( "template" );
+            result.fadeIn(500);
+            $container.append(result);
+        });
+    }
 }
 
 // Cuts off lengthy content to a given maximum number of words
