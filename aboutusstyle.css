@@ -724,4 +724,350 @@ body {
 	font-weight: bold;
 }
 
+@media (max-width: 768px) { /*makes it look good on mobile */
 
+	html, body {
+		width: 100%;
+		height: 100%;
+		font-size: 1em;
+	}
+
+	#page-container {
+		width: auto;
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+
+	#header {
+		height: 100%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#about-statement {
+		height: 100%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#lets-drink-is {
+		height: 100%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#personnel-pics {
+		margin-bottom: -50px;
+	}
+
+	#jerissa {
+		display: none;
+	}
+
+	#josh {
+		display: none;
+	}
+
+	#chris {
+		display: none;
+	}
+
+	#eric {
+		display: none;
+	}
+
+	#jerissa-nametag {
+		height: 100%;
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	#josh-nametag {
+		height: 100%;
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	#chris-nametag {
+		height: 100%;
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	#eric-nametag {
+		height: 100%;
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	#videos-header {
+		height: auto;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		line-height: 40px;
+	}
+
+	#github-header {
+		height: auto;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		line-height: 40px;
+	}
+
+	#contact-header {
+		display: none;
+	}
+
+	#follow-header {
+		display: none;
+	}
+
+	#contact-info {
+		width: 90%;
+		text-align: center;
+		clear: both;
+	}
+
+	#home_button {
+		height: 100%;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-bottom: 2%;
+	}
+	
+	#about_button {
+		height: 100%;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-bottom: 2%;
+	}
+
+	#marketing_button {
+		height: 100%;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-bottom: 2%;
+	}
+
+	#technical_button {
+		height: 100%;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-bottom: 2%;
+	}
+
+	#results_button {
+		height: 100%;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+	
+	#marketing-header {
+		height: 100%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#goals-header {
+		height: 100%;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		line-height: 30px;
+	}
+
+	#marketing-goals {
+		height: 100%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#users-header {
+		height: 100%;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		line-height: 30px;
+	}
+
+	#users {
+		height: 100%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#competitors-header {
+		height: 100%;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		line-height: 30px;
+	}
+
+	#our-competitors {
+		height: 100%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#collaborators-header {
+		height: 100%;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		line-height: 30px;
+		font-size: .9em;
+	}
+
+	#our-collaborators {
+		height: 100%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#searching-header {
+		height: 100%;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		line-height: 30px;
+		font-size: .9em;
+	}
+
+	#searching-us {
+		height: 100%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#technical-header {
+		height: 100%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		line-height: 30px;
+	}
+
+	#features-header {
+		height: 100%;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		line-height: 30px;
+	}
+
+	#implemented-features {
+		height: 100%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#results-header {
+		height: 100%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		line-height: 30px;
+	}
+
+	#ux-header {
+		height: 100%;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		line-height: 30px;
+	}
+
+	#user-experience p {
+		height: 100%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#pn-header {
+		height: 100%;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		line-height: 30px;
+	}
+
+	#pn-results p {
+		height: 100%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#user-testing-header {
+		height: 100%;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		line-height: 30px;
+	}
+
+	#user-testing p {
+		height: 100%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#audience-header {
+		height: 100%;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		line-height: 30px;
+	}
+
+	#audience p {
+		height: 100%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#analytics-pics {
+		display: none;
+	}
+
+	#acquisition-header {
+		height: 100%;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		line-height: 30px;
+		font-size: .9em;
+	}
+
+	#acquisition p {
+		height: 100%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
