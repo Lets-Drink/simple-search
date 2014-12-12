@@ -480,7 +480,19 @@ body {
 	text-align: center;
 	margin-top: 15px;
 	height: auto;
-	width: 200px;
+	width: 150px;
+	border: 1px solid black;
+	margin-bottom: 30px;
+}
+
+#about_button {
+	background-color: white;
+	margin-left: 50px;
+	float: left;
+	text-align: center;
+	margin-top: 15px;
+	height: auto;
+	width: 150px;
 	border: 1px solid black;
 	margin-bottom: 30px;
 }
@@ -492,7 +504,7 @@ body {
 	text-align: center;
 	margin-top: 15px;
 	height: auto;
-	width: 200px;
+	width: 150px;
 	border: 1px solid black;
 	margin-bottom: 30px;
 }
@@ -504,7 +516,7 @@ body {
 	text-align: center;
 	margin-top: 15px;
 	height: auto;
-	width: 200px;
+	width: 150px;
 	border: 1px solid black;
 	margin-bottom: 30px;
 }
@@ -516,39 +528,47 @@ body {
 	text-align: center;
 	margin-top: 15px;
 	height: auto;
-	width: 200px;
+	width: 150px;
 	border: 1px solid black;
 	margin-bottom: 30px;
 }
 
 #home_button p {
 	font-weight: bold;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#about_button p {
+	font-weight: bold;
+	margin-left: 5px;
+	margin-right: 5px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
 #marketing_button p {
 	font-weight: bold;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
 #technical_button p {
 	font-weight: bold;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
 #results_button p {
 	font-weight: bold;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
