@@ -1079,3 +1079,14 @@ body {
 		margin-left: 15%;
 	}
 }
+
+@media (max-width: 382px) {
+
+		#social-networks {
+		text-align: center;
+		display: inline-block;
+		width: 40%;
+		margin-right: 30%;
+		margin-left: 30%;
+	}
+}
