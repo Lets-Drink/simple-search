@@ -16,25 +16,18 @@ body {
 }
 
 #page-container {
-	height: 5000px;
+	overflow: auto;
 	width: 1300px;
 	margin: auto;
 	background-color: rgba(170,182,162,1.0);
 	margin-top: 20px;
 	border: 2px solid black;
 	box-shadow: 5px 5px 10px #555;
-}
-
-#home-logo img {
-	float: center;
-}
-
-#home-logo img {
-	height: 100px;
-	width: 200px;
+	margin-bottom: 40px;
 }
 
 #header {
+	clear: left;
 	background-color: white;
 	float: center;
 	text-align: center;
@@ -66,7 +59,7 @@ body {
 }
 
 #personnel-pics {
-	height: 500px;
+	height: 450px;
 	margin-top: 50px;
 }
 
@@ -197,6 +190,7 @@ body {
 }
 
 #marketing-header {
+	clear: left;
 	background-color: white;
 	float: center;
 	text-align: center;
@@ -217,6 +211,7 @@ body {
 }
 
 #technical-header {
+	clear: left;
 	background-color: white;
 	float: center;
 	text-align: center;
@@ -237,6 +232,7 @@ body {
 }
 
 #results-header {
+	clear: left;
 	background-color: white;
 	float: center;
 	text-align: center;
@@ -270,10 +266,7 @@ body {
 #both-videos {
 	float: center;
 	margin-bottom: 60px;
-}
-
-#youtube {
-	margin-left: 50px;
+	text-align: center;
 }
 
 #contact-header {
@@ -313,6 +306,7 @@ body {
 	float: right;
 	margin-top: 25px;
 	margin-right: 8%;
+	margin-bottom: 20px;
 }
 
 #twitter img {
@@ -321,6 +315,7 @@ body {
 	float: right;
 	margin-top: 25px;
 	margin-right: 8%;
+	margin-bottom: 20px;
 }
 
 #google-plus img {
@@ -329,6 +324,7 @@ body {
 	float: right;
 	margin-right: 5%;
 	margin-top: 25px;
+	margin-bottom: 20px;
 }
 
 #goals-header {
@@ -411,6 +407,26 @@ body {
 	margin-bottom: 50px;
 }
 
+#searching-header {
+	background-color: white;
+	float: center;
+	text-align: center;
+	width: 25%;
+	margin-left: 150px;
+	border: 1px solid black;
+	margin-bottom: 30px;
+	line-height: 15px;
+}
+
+#searching-us {
+	font-weight: bold;
+	float: center;
+	text-align: left;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 50px;
+}
+
 #technical-header {
 	background-color: white;
 	float: center;
@@ -442,6 +458,10 @@ body {
 	margin-bottom: 50px;
 }
 
+#implemented-features h2 {
+	text-decoration: underline;
+}
+
 #results-header {
 	background-color: white;
 	float: center;
@@ -450,6 +470,224 @@ body {
 	margin-left: 25%;
 	border: 1px solid black;
 	margin-bottom: 30px;
+	line-height: 15px;
+}
+
+#home_button {
+	background-color: white;
+	margin-left: 150px;
+	float: left;
+	text-align: center;
+	margin-top: 15px;
+	height: auto;
+	width: 200px;
+	border: 1px solid black;
+	margin-bottom: 30px;
+}
+
+#marketing_button {
+	background-color: white;
+	margin-left: 60px;
+	float: left;
+	text-align: center;
+	margin-top: 15px;
+	height: auto;
+	width: 200px;
+	border: 1px solid black;
+	margin-bottom: 30px;
+}
+
+#technical_button {
+	background-color: white;
+	margin-left: 60px;
+	float: left;
+	text-align: center;
+	margin-top: 15px;
+	height: auto;
+	width: 200px;
+	border: 1px solid black;
+	margin-bottom: 30px;
+}
+
+#results_button {
+	background-color: white;
+	margin-left: 60px;
+	float: left;
+	text-align: center;
+	margin-top: 15px;
+	height: auto;
+	width: 200px;
+	border: 1px solid black;
+	margin-bottom: 30px;
+}
+
+#home_button p {
+	font-weight: bold;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#marketing_button p {
+	font-weight: bold;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#technical_button p {
+	font-weight: bold;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#results_button p {
+	font-weight: bold;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#ux-header {
+	background-color: white;
+	float: center;
+	text-align: center;
+	width: 25%;
+	margin-left: 150px;
+	border: 1px solid black;
+	margin-bottom: 30px;
+	line-height: 15px;
+}
+
+#user-experience p {
+	font-weight: bold;
+	float: center;
+	text-align: left;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 50px;
+}
+
+#pn-header {
+	background-color: white;
+	float: center;
+	text-align: center;
+	width: 25%;
+	margin-left: 150px;
+	border: 1px solid black;
+	margin-bottom: 30px;
+	line-height: 15px;
+}
+
+#pn-results p {
+	font-weight: bold;
+	float: center;
+	text-align: left;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 50px;
+}
+
+#user-testing-header {
+	background-color: white;
+	float: center;
+	text-align: center;
+	width: 25%;
+	margin-left: 150px;
+	border: 1px solid black;
+	margin-bottom: 30px;
+	line-height: 15px;
+}
+
+#user-testing p {
+	font-weight: bold;
+	float: center;
+	text-align: left;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 50px;
+}
+
+#audience-header {
+	background-color: white;
+	float: center;
+	text-align: center;
+	width: 25%;
+	margin-left: 150px;
+	border: 1px solid black;
+	margin-bottom: 30px;
+	line-height: 15px;
+}
+
+#audience p {
+	font-weight: bold;
+	float: center;
+	text-align: left;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 50px;
+}
+
+#acquisition-header {
+	background-color: white;
+	float: center;
+	text-align: center;
+	width: 35%;
+	margin-left: 150px;
+	border: 1px solid black;
+	margin-bottom: 30px;
+	line-height: 15px;
+}
+
+#acquisition p {
+	font-weight: bold;
+	float: center;
+	text-align: left;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 50px;
+}
+
+#analytics-header {
+	background-color: white;
+	float: center;
+	text-align: center;
+	width: 35%;
+	margin-left: 150px;
+	border: 1px solid black;
+	margin-bottom: 30px;
+	line-height: 15px;
+}
+
+#first-pic img {
+	width: 75%;
+	height: 100%;
+	margin-left: 150px;
+	margin-bottom: 30px;
+	border: 2px solid black;
+}
+
+#second-pic img {
+	width: 75%;
+	height: 100%;
+	margin-left: 150px;
+	margin-bottom: 50px;
+	border: 2px solid black;
+}
+
+#github-header {
+	background-color: white;
+	float: center;
+	text-align: center;
+	width: 50%;
+	margin-left: 25%;
+	margin-bottom: 60px;
+	border: 1px solid black;
 	line-height: 15px;
 }
 

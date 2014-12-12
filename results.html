@@ -63,27 +63,68 @@
         </script>
 <body>
        <div id="page-container">
-            <div id="home-logo">
-                <a href="index.html"><img src="LetsDrink7.png" itemprop="logo" alt="Lets Drink Logo"/></a>
+            <div id="buttons">
+                <div id="home_button">
+                    <a href="index.html"><p>Home</p></a>
+                </div>
+                <div id="marketing_button">
+                    <a href="marketing.html"><p>Marketing Plan</p></a>
+                </div>
+                <div id="technical_button">
+                    <a href="technical.html"><p>Technical Plan</p></a>
+                </div>
+                <div id="results_button">
+                    <a href="results.html"><p>Results/Evaluations</p></a>
+                </div>
             </div>
             <div id="results-header">
                 <h1>Our Results and Evaluations</h1>
             </div>
-            <div id="features-header">
-                <h2>Back-end Features</h2>
+            <div id="ux-header">
+                <h1>User Experience</h1>
             </div>
-            <div id="implemented-features">
-                <p>Spell Checking</p>
-                <p>Spell checking was a special feature added through Solr. We had to modify the Solr Config file to activate spellchecking, and modify our query to Solr to obtain results. Then on the front end, we had to modify our Javascript to handle the modified query to display the spell checking results on the front.</p>
-
-                <p>Hit Highlighting</p>
-                <p>Hit Highlighting was another special feature of Solr we implemented into Let’s Drink. Using this feature was easier than implementing Spell Checking because all we had to do was modify our query to Solr to return highlighted results. Then on the front end, we also had to modify the Javascript to handle the modified query to display the highlighted content results.</p>
-
-                <p>Suggested Results</p>
-                <p>Suggested Results is another special feature of Solr, however it is currently not a working feature within Let’s Drink. We have made attempted efforts through modifying our queries, and reading several documentations of different Solr versions implementing this feature. Through our efforts of modify the Solr configuration file, we have made no functional progress on this feature, only ongoing efforts.</p>
-
-                <p>Boosting</p>
-                <p>We are using boosting to increase the score of certain key words in our solr and nutch Index. By doing this we will make our results more relevant, so that when users search for specific ingredients such as rum or vodka, the results that come up will be more accurate. Currently, we have been adding the code to boost the keywords in our query, but only time will tell if the results are getting more accurate. There were two ways to boost results, the first way was to boost specific words by adding the words to the query and then boosting the specific words. Or you could boost the "keywords" specifically. I have tried the first method and to my dismay it did not yield many results. But after boosting the field, it seems that our results are better and more relevant.</p>  
+            <div id="user-experience">
+                <p>We evaluated the search engine interface by asking friends and family what they thought about it. I asked them to each use the website to find a specific drink. Four out of the five people found the drink they were looking for and that was before we crawled a bunch of other websites. As far as the web interface went, they all thought it was exciting, intuitive, and easy to use. I got particular praise about the slideshow in the background, the design and the bottle cap buttons. I then got each of them to access the website through their phones. This they said could be better. They disliked that the design and buttons became small, but they still said it worked fine and could they still navigate it.</p> 
+            </div>
+            <div id="pn-header">
+                <h1>P@N Test</h1>
+            </div>
+            <div id="pn-results">
+                <p>To test our research results, we used the P@N method to test the relevance of the first N results. We used N = 5 for instant relevancy. For the queries:<br><br>
+                “long island iced tea”: 2/5 relevant results<br>
+                “irish car bomb”: 4/5 relevant results<br>
+                “rum”: 2/5 relevant results<br>
+                “Christmas”: 3/5 relevant results<br><br>
+                Our results in general are not very relevant, but not irrelevant.</p>
+            </div>
+            <div id="user-testing-header">
+                <h1>User Testing</h1>
+            </div>
+            <div id="user-testing">
+                <p>We also tested our search results with casually potential users (college students). We asked users  to search for an alcoholic drink in general, and tell us what they think about the results. The most common outcome was, people could find something relevant to what they were searching for, but there is a lot of other search result noise that were irrelevant. In conclusion, there is room for Let’s Drink to grow to provide better results for their users.<p>
+            </div>
+            <div id="audience-header">
+                <h1>Audience</h1>
+            </div>
+            <div id="audience">
+                <p>We have seen positive growth in our audience. More and more people are visiting Let’s Drink. Over half of our audience are new users, while the other half are returning users. Also people stay on Let’s Drink for almost 4 minutes, so we can assume that Let’s Drink is relevant to our users.</p>
+            </div>
+            <div id="acquisition-header">
+                <h1>Audience Acquisition</h1>
+            </div>
+            <div id="acquisition">
+                <p>We have implemented keywords into our html tag so that we can be better found by search engines. As seen in the Acquisition report, we are able to be found from organic search. But also people are directly finding us from word of mouth and sharing Let’s Drink directly with users. But also we have been found from referrals via social media sites.</p>
+            </div>
+            <div id="analytics-header">
+                <h1>Google Analytics</h1>
+            </div>
+            <div id="analytics-pics">
+                <div id="first-pic">
+                    <img src="Acquisition.png" alt="Google analytics">
+                </div>
+                <div id="second-pic">
+                    <img src="audienceoverview.png" alt="Google analytics audience overview">
+                </div>
             </div>
             <div id="contact-header">
                 <h1>Contact Us</h1>

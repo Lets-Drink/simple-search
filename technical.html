@@ -63,26 +63,43 @@
         </script>
 <body>
        <div id="page-container">
-            <div id="home-logo">
-                <a href="index.html"><img src="LetsDrink7.png" itemprop="logo" alt="Lets Drink Logo"/></a>
+            <div id="buttons">
+                <div id="home_button">
+                    <a href="index.html"><p>Home</p></a>
+                </div>
+                <div id="marketing_button">
+                    <a href="marketing.html"><p>Marketing Plan</p></a>
+                </div>
+                <div id="technical_button">
+                    <a href="technical.html"><p>Technical Plan</p></a>
+                </div>
+                <div id="results_button">
+                    <a href="results.html"><p>Results/Evaluations</p></a>
+                </div>
             </div>
             <div id="technical-header">
                 <h1>Our Technical Plan</h1>
             </div>
             <div id="features-header">
-                <h2>Back-end Features</h2>
+                <h2>Implemented Features</h2>
             </div>
             <div id="implemented-features">
-                <p>Spell Checking</p>
+                <h2>User Interface</h2>
+                <p>The User interface for Lets Drink is designed to be attractive and entertaining. We have a slideshow rotating cool, classy pictures about drinking. We also have a striking design that promotes our brand and gives the audience the idea that we are a fun website. The bottle cap links gives our users different ways to use the website while remaining visually appealing and on topic. This website looks great and works to give the user a great selection of drinks.</p>
+
+                <h2>SEO</h2>
+                <p>To boost our SEO for Let’s Drink, we have implemented keywords (Cocktail Recipes, Cocktail Builder, Mixed Drinks, Easy Drink Recipes) into our HTML so that we can be easily found through search engines. This allows us to attraction users via search engines. We have also added Google Analytics to track data on Let’s Drink. We can monitor our audience base as it grows and uses Let’s Drink, while monitoring the acquisition of our audience.</p>
+
+                <h2>Spell Checking</h2>
                 <p>Spell checking was a special feature added through Solr. We had to modify the Solr Config file to activate spellchecking, and modify our query to Solr to obtain results. Then on the front end, we had to modify our Javascript to handle the modified query to display the spell checking results on the front.</p>
 
-                <p>Hit Highlighting</p>
+                <h2>Hit Highlighting</h2>
                 <p>Hit Highlighting was another special feature of Solr we implemented into Let’s Drink. Using this feature was easier than implementing Spell Checking because all we had to do was modify our query to Solr to return highlighted results. Then on the front end, we also had to modify the Javascript to handle the modified query to display the highlighted content results.</p>
 
-                <p>Suggested Results</p>
+                <h2>Suggested Results</h2>
                 <p>Suggested Results is another special feature of Solr, however it is currently not a working feature within Let’s Drink. We have made attempted efforts through modifying our queries, and reading several documentations of different Solr versions implementing this feature. Through our efforts of modify the Solr configuration file, we have made no functional progress on this feature, only ongoing efforts.</p>
 
-                <p>Boosting</p>
+                <h2>Boosting</h2>
                 <p>We are using boosting to increase the score of certain key words in our solr and nutch Index. By doing this we will make our results more relevant, so that when users search for specific ingredients such as rum or vodka, the results that come up will be more accurate. Currently, we have been adding the code to boost the keywords in our query, but only time will tell if the results are getting more accurate. There were two ways to boost results, the first way was to boost specific words by adding the words to the query and then boosting the specific words. Or you could boost the "keywords" specifically. I have tried the first method and to my dismay it did not yield many results. But after boosting the field, it seems that our results are better and more relevant.</p>  
             </div>
             <div id="contact-header">
