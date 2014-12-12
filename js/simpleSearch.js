@@ -3,7 +3,11 @@ $(function(){
     // Shortcut function that performs search with the correct parameters.
     // Can be called without any arguments inline 
     function simpleSearch() {
-        search( $( "input#query" ).val(), $( "#results" ), $( ".template.result" ) );
+        $( "#results" ).hide();
+        if($( "input#query" ).val().trim() != "") {
+            search( $( "input#query" ).val(), $( "#results" ), $( ".template.result" ) );
+        }
+            
     };
 
     $( "#ClickMe" ).click(function() {simpleSearch()});
@@ -52,6 +56,7 @@ function search(query, $container, $template){
         },
         jsonp: 'json.wrf',
         success: function (data) {
+                $container.show();
                 // Spellchecking
                 var sp = data.spellcheck.suggestions;
                 $(".spellchecking").hide();
