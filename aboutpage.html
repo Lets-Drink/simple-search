@@ -31,36 +31,6 @@
             ga('send', 'pageview');
             
         </script>
-        <script language="JavaScript" type="text/javascript">
-            <!--Got following code from http://stackoverflow.com/questions/5358183/is-it-possible-to-dynamically-scale-text-size-based-on-browser-width -->
-            
-            $( document ).ready( function() {
-                     var $body = $('body'); //Cache this for performance
-            // window.alert("Setting Font Size");
-            
-                     var setBodyScale = function() {
-                         var scaleSource = $body.width(),
-                             scaleFactor = 0.1,                     
-                             maxScale = 600,
-                             minScale = 30; //Tweak these values to taste
-            
-                         var fontSize = scaleSource * scaleFactor; //Multiply the width of the body by the scaling factor:
-            
-                         if (fontSize > maxScale) fontSize = maxScale;
-                         if (fontSize < minScale) fontSize = minScale; //Enforce the minimum and maximums
-            
-                         $('body').css('font-size', fontSize + '%');
-                     }
-            
-                     $(window).resize(function(){
-                         setBodyScale();
-                     });
-            
-                     //Fire it when the page first loads:
-                     setBodyScale();
-                 });  
-                 
-        </script>
 <body>
        <div id="page-container">
             <div id="buttons">
